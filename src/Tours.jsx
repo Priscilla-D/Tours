@@ -5,8 +5,9 @@ const Tours = ({ tours }) => {
   return (
     <section>
       {tours.map((tour) => {
-        <Tour {...tour} />;
-      })}
+        return(
+        <Tour {...tour} />
+        )})}
     </section>
   );
 };
