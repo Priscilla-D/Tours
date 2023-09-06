@@ -162,6 +162,15 @@ ul {
   width: 100%;
 }
 
+.refresh {
+  display: flex;
+}
+
+.btn,
+.refresh {
+  justify-content: end;
+}
+
 @keyframes spinner {
   to {
     transform: rotate(360deg);
