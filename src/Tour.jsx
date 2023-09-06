@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Tour = ({ id, image, info, name, price, removeTour }) => {
+const Tour = ({ id, image, info, name, price, handleRemove }) => {
   const [isReadMore, setIsReadMore] = useState(false);
   return (
     <article className="single-tour">
@@ -20,7 +20,7 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
         </p>
         <button
           className="delete-btn btn-block btn"
-          onClick={() => removeTour(id)}
+          onClick={() => handleRemove(id)}
         >
           not interested
         </button>

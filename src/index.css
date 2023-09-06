@@ -51,7 +51,7 @@ html {
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
+  --max-width: 1440px;
   --fixed-width: 600px;
 
   /* box shadow*/
@@ -199,7 +199,7 @@ main {
   margin: 5rem auto;
 }
 #root {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .tours {
@@ -252,6 +252,7 @@ section {
   line-height: 1.5;
   color: var(--grey-500);
   margin-bottom: 1.25rem;
+  text-align: justify;
 }
 .info-btn,
 .delete-btn {

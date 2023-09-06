@@ -28,10 +28,19 @@ function App() {
     fetchDatas();
   }, []);
 
+  const removeTour = (id) => {
+    const toursList = [...tours];
+    const newList = toursList.filter((tour) => tour.id !== id);
+    setTours(newList);
+  };
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <main>
-      {isLoading && <Loader />}
-      <Tours tours={tours} />
+      <Tours tours={tours} removeTour={removeTour} />
     </main>
   );
 }
