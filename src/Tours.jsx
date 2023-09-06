@@ -4,10 +4,15 @@ const Tours = ({ tours }) => {
   console.log(tours);
   return (
     <section>
-      {tours.map((tour) => {
-        return(
-        <Tour {...tour} />
-        )})}
+      <div className="title">
+        <h2>our tours</h2>
+        <div className="title-underline"></div>
+      </div>
+      <div className="tours">
+        {tours.map((tour) => {
+          return <Tour key={tour.id} {...tour} />;
+        })}
+      </div>
     </section>
   );
 };
