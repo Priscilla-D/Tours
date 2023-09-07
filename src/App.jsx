@@ -41,13 +41,13 @@ function App() {
   return (
     <main>
       <div className="refresh">
-      <button
-        className="btn refresh"
-        type="button"
-        onClick={() => fetchDatas()}
-      >
-        Refresh
-      </button>
+        <button
+          className="btn btn-refresh"
+          type="button"
+          onClick={() => fetchDatas()}
+        >
+          Refresh tours
+        </button>
       </div>
       <Tours tours={tours} removeTour={removeTour} />
     </main>
